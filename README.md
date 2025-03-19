@@ -1,4 +1,12 @@
 # E1 Implementation of Lexical Analysis (Automaton and Regular Expression)
+---
+Mateo Minghi Vega
+
+A01711231
+
+
+
+
 
 
 "STC0101
