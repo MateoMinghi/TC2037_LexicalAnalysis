@@ -1,4 +1,4 @@
-# TC2037_LexicalAnalysis
+# E1 Implementation of Lexical Analysis (Automaton and Regular Expression)
 
 
 "STC0101
