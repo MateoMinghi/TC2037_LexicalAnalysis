@@ -109,8 +109,6 @@ With this design, we define S2 as the final state, with these transitions:
 % Must contain "ab"
 % Must not contain "aa" or "ccb"
 
-% DFA based on the image
-
 % Transitions
 transition(s0, b, s0).
 transition(s0, a, s1).
