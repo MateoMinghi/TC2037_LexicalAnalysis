@@ -2,7 +2,7 @@
 
 :- ["DFA"].
 
-test_1 :- check_string("ab").
+test_1 :- check_string("cbabc").
 test_2 :- check_string("abc").
 test_3 :- check_string("acab").
 test_4 :- check_string("bab").

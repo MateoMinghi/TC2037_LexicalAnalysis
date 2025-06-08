@@ -42,3 +42,12 @@ process_string([], CurrentState) :-
 process_string([Char|Rest], CurrentState) :-
     transition(CurrentState, Char, NextState),
     process_string(Rest, NextState).
+
+% atomating testing in the same script
+run_tests :-
+    TestCases = ["cbabc", "abc", "acab", "bab", "cab", "abb", "acbcab", "cabcab", "abcc", "abccc",
+                 "abcb", "abcbb", "abcbc", "cabb", "ccab", "ccabc", "accab", "acbab", "acbcabb",
+                 "acbcabc", "", "a", "b", "c", "aa", "ccb", "cca", "aac", "bc", "ca", "cc", "aaa",
+                 "cbb", "acccb", "ccccb", "accc", "aaaa", "bbbb", "cccc", "ccaabb"],
+    forall(member(Test, TestCases),
+           (check_string(Test) -> format("~w: true~n", [Test]) ; format("~w: false~n", [Test]))).
