@@ -22,7 +22,7 @@ transition(s3, c, s3).
 
 transition(s4, c, s4).
 transition(s4, a, s1).
-transition(s4, b, s5).
+transition(s4, b, s0).
 
 transition(s5, a, s5).
 transition(s5, b, s5).
